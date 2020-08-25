@@ -1,0 +1,2 @@
+rootProject.name='DEFENDERS - random chat'
+include ':app' , ':deepar' , ':swipelayout'

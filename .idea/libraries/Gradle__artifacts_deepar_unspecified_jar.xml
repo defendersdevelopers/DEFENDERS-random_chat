@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:deepar:unspecified@jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/deepar/build/.transforms/4b02977436516b841f4c098c5a7cdd49/jetified-deepar/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/deepar/build/.transforms/4b02977436516b841f4c098c5a7cdd49/jetified-deepar/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/deepar/build/.transforms/4b02977436516b841f4c098c5a7cdd49/jetified-deepar/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

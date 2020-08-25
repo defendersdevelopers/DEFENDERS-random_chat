@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="gone"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="#72000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_weight="60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="10"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:background="#40FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:background="#40FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/loadAiFaces"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:tint="#EBFFFFFF"
+                    android:src="@drawable/effect"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageView>
+                <View
+                    android:id="@+id/viewActiveAiFaces"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:id="@+id/loadEffects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:tint="#EBFFFFFF"
+                    android:src="@drawable/rgp_ic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ImageView>
+                <View
+                    android:id="@+id/viewActiveEffect"
+                    android:layout_gravity="center"
+                    android:background="#40FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:background="#40FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_gravity="bottom"
+                    android:background="#40FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+
+                </View>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+
+                android:id="@+id/AIRecyclerView"
+                tools:listitem="@layout/item_filter"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filtersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_filter">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </FrameLayout>
+
+    </LinearLayout>

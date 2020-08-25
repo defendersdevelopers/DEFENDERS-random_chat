@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFC107"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meme_chat"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:text="@string/id_197"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:id="@+id/advantageName"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="#5A5A5A"
+        android:text="@string/id_361"
+        android:fontFamily="@font/arb_1"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/advantageDis"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

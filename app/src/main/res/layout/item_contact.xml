@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/myItem"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+
+        android:layout_marginEnd="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/name"
+
+            android:padding="5dp"
+            android:textColor="#393939"
+            android:fontFamily="@font/arb_1"
+            android:text="@string/id_612"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:padding="5dp"
+            android:textColor="#393939"
+            android:textDirection="ltr"
+            android:fontFamily="@font/arb_1"
+            android:text="+2 01445093031"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp">
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fancy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#29b6f6"
+            fancy:fb_focusColor="@color/colorPrimaryDark"
+            fancy:fb_radius="30dp"
+            fancy:fb_text=" "
+            fancy:fb_textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/id_137"
+            android:fontFamily="@font/arb_1"
+            android:id="@+id/inviteButtonText"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</RelativeLayout>

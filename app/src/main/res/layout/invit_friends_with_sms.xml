@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".friends.invit_friends_with_sms">
+
+  <androidx.appcompat.widget.Toolbar
+      android:background="@color/colorPrimary"
+      app:title="@string/app_name"
+      app:titleTextColor="@color/white"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  </androidx.appcompat.widget.Toolbar>
+  <GridView
+      android:id="@+id/grid_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="10dp"
+      android:columnWidth="90dp"
+      tools:listitem="@layout/item_contact"
+      android:gravity="center"
+      android:horizontalSpacing="10dp"
+      android:numColumns="1"
+      android:stretchMode="columnWidth"
+      android:verticalSpacing="10dp"/>
+  </LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".getStarted.create_account">
+
+
+
+    <FrameLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/id_61"
+            android:fontFamily="@font/arb_1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_below="@+id/bar"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".create_account">
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/id_62"
+            android:fontFamily="@font/arb_1"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColorHint="#6DFFFFFF"
+            android:hint="@string/id_63"
+            android:id="@+id/edit_name"
+            android:textColor="@color/white"
+            android:fontFamily="@font/arb_1"
+
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+    <TextView
+        android:textColor="@color/white"
+        android:text="@string/id_64"
+        android:fontFamily="@font/arb_1"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#6DFFFFFF"
+        android:text="@string/id_65"
+        android:id="@+id/choseBirthday"
+        android:onClick="choseBirthday"
+
+        android:fontFamily="@font/arb_1"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:background="#71000C2B"
+        android:layout_height="2dp">
+
+    </View>
+    <TextView
+        android:textColor="@color/white"
+        android:text="@string/id_66"
+        android:fontFamily="@font/arb_1"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+          android:textColor="@color/white"
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id_251" />
+
+            <RadioButton
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id_67" />
+        </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start"
+        android:gravity="end"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/group"
+        android:layoutDirection="ltr"
+        app:rrbg_animateDrawables_enter="overshoot"
+        app:rrbg_animateTexts_enter="overshoot"
+        app:rrbg_dividerColor="@color/colorPrimaryDark"
+        app:rrbg_dividerSize="1dp"
+        app:rrbg_selectorColor="@color/white"
+        app:rrbg_selectorSize="6dp">
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/femme"
+            android:id="@+id/male"
+            app:rrb_drawableHeight="36dp"
+            app:rrb_drawablePadding="8dp"
+            app:rrb_drawableWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/colorPrimaryDark"
+            app:rrb_text="@string/id_68"
+
+            app:rrb_selectorColor="@color/colorPrimaryDark"
+
+            app:rrb_textColor="@color/black"/>
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawable="@drawable/gender_img_2"
+            app:rrb_drawableGravity="right"
+            app:rrb_drawableHeight="36dp"
+            android:id="@+id/female"
+            app:rrb_drawablePadding="8dp"
+            app:rrb_drawableWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/colorPrimaryDark"
+            app:rrb_text="@string/id_67"
+            app:rrb_selectorColor="@color/colorPrimaryDark"
+
+            app:rrb_textColor="@color/black"/>
+    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+    </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:onClick="createAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_spotify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            fancy:fb_borderColor="@color/white"
+            fancy:fb_borderWidth="1dp"
+
+            fancy:fb_defaultColor="@color/white"
+            fancy:fb_focusColor="@color/colorPrimaryDark"
+            fancy:fb_radius="0dp"
+            fancy:fb_text="..."
+            fancy:fb_textColor="@color/white" />
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="@string/id_69"
+            android:fontFamily="@font/arb_1"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>

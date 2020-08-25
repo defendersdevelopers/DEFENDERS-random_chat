@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".getStarted.enter_invite_code">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/code_2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+        <TextView
+            android:text="@string/id_8"
+            android:fontFamily="@font/arb_1"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="@string/id_9"
+            android:textSize="16sp"
+            android:id="@+id/codeEditText"
+            android:textColorHint="#656565"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="#BABABA"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:id="@+id/cancel"
+                android:textColor="#979797"
+                android:layout_marginTop="10dp"
+                android:text="@string/id_11"
+                android:onClick="skip"
+                android:fontFamily="@font/arb_1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:ignore="OnClick" />
+            <View
+                android:layout_width="1dp"
+                android:background="#BABABA"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ok"
+                android:textColor="#2B2B2B"
+                android:text="@string/id_10"
+                android:onClick="checkCode"
+                android:fontFamily="@font/arb_1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

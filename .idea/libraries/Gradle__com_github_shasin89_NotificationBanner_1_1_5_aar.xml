@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.shasin89:NotificationBanner:1.1.5@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/537084bfdcec8c8af9c08af7e05507d1/jetified-NotificationBanner-1.1.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/537084bfdcec8c8af9c08af7e05507d1/jetified-NotificationBanner-1.1.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/537084bfdcec8c8af9c08af7e05507d1/jetified-NotificationBanner-1.1.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

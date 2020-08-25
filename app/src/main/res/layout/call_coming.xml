@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EDEBED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout   android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".chat.CallComing">
+
+        <FrameLayout
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/call" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/loading" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="45dp"
+                android:fontFamily="@font/arb_1"
+                android:gravity="center"
+                android:text="@string/id_16"
+                android:textColor="#9F000000"
+                android:textSize="25dp" />
+        </FrameLayout>
+
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/example_gray_on_green"
+
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            app:area_margin="4dp"
+            app:border_radius="30dp"
+android:layout_marginTop="20dp"
+            app:inner_color="@color/white"
+            app:outer_color="@color/colorPrimary"
+            app:slider_height="60dp"
+            app:slider_locked="false"
+            app:text="Slide to accept"
+            app:text_size="16sp" />
+
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:onClick="reject"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="45dp"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:onClick="reject"
+            android:text="decline"
+            android:textColor="#9F000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+</ScrollView>

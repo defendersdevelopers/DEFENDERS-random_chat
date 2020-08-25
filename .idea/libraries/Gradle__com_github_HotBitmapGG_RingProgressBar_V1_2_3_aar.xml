@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.HotBitmapGG:RingProgressBar:V1.2.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c34f71a1b1a8b577cb4256abca4e9c1/jetified-RingProgressBar-V1.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c34f71a1b1a8b577cb4256abca4e9c1/jetified-RingProgressBar-V1.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2c34f71a1b1a8b577cb4256abca4e9c1/jetified-RingProgressBar-V1.2.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.HotBitmapGG/RingProgressBar/V1.2.3/875c4ce7c66e1aa0b8f1739965e3bf8782f5ceb9/RingProgressBar-V1.2.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.HotBitmapGG/RingProgressBar/V1.2.3/fd7e6de8e4b1a9788c9d04f97ae3d2c7a7e6e570/RingProgressBar-V1.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="close"
+                    android:padding="12dp"
+                    android:src="@drawable/close"
+                    android:tint="#CDA1A1A1"></ImageView>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="11dp"
+                    android:src="@drawable/supermarket"
+                    android:tint="#CDA1A1A1"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/arb_1"
+                    android:gravity="center"
+                    android:text="@string/id_12"
+                    android:textColor="#CD000000"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:tint="#CDA1A1A1">
+                    <TextView
+                        android:id="@+id/gemsViewer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/arb_1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/diamond"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arb_1"
+                        android:text="@string/id_14"
+                        android:textColor="#CD000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+                        <com.github.captain_miao.optroundcardview.OptRoundCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="10dp"
+                            app:optRoundCardBackgroundColor="#50DA85"
+                            app:optRoundCardBottomEdges="false"
+                            app:optRoundCardCornerRadius="15dp"
+                            app:optRoundCardLeftBottomCorner="true"
+                            app:optRoundCardLeftTopCorner="false"
+                            app:optRoundCardRightBottomCorner="true"
+                            app:optRoundCardRightTopCorner="false">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/arb_1"
+                                android:gravity="center"
+                                android:onClick="earnGems"
+                                android:padding="5dp"
+                                android:text="@string/id_173"
+                                android:textColor="@color/white"
+                                android:textSize="11dp" />
+                        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                app:optRoundCardBackgroundColor="@color/white"
+                                app:optRoundCardBottomEdges="false"
+                                app:optRoundCardCornerRadius="15dp"
+                                app:optRoundCardLeftBottomCorner="true"
+                                app:optRoundCardLeftTopCorner="true"
+                                app:optRoundCardRightBottomCorner="true"
+                                app:optRoundCardRightTopCorner="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="90dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@color/white" />
+
+                                        <pl.droidsonroids.gif.GifImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gif_gem" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/arb_1"
+                                        android:gravity="center"
+                                        android:text="loading"
+                                        android:id="@+id/gems_package_1_count"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        app:optRoundCardBackgroundColor="#50DA85"
+                                        app:optRoundCardBottomEdges="false"
+                                        app:optRoundCardCornerRadius="15dp"
+                                        app:optRoundCardLeftBottomCorner="true"
+                                        app:optRoundCardLeftTopCorner="false"
+                                        app:optRoundCardRightBottomCorner="true"
+                                        app:optRoundCardRightTopCorner="false">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/arb_1"
+                                            android:gravity="center"
+                                            android:onClick="gems_package_1"
+                                            android:padding="5dp"
+                                            android:id="@+id/gems_package_1_price"
+                                            android:text="Loading"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp"
+                                            tools:ignore="OnClick" />
+                                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                                </LinearLayout>
+                            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                app:optRoundCardBackgroundColor="@color/white"
+                                app:optRoundCardBottomEdges="false"
+                                app:optRoundCardCornerRadius="15dp"
+                                app:optRoundCardLeftBottomCorner="true"
+                                app:optRoundCardLeftTopCorner="true"
+                                app:optRoundCardRightBottomCorner="true"
+                                app:optRoundCardRightTopCorner="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="90dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@color/white" />
+
+                                        <pl.droidsonroids.gif.GifImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gif_gem" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/arb_1"
+                                        android:gravity="center"
+                                        android:text="loading"
+                                        android:id="@+id/gems_package_2_count"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        app:optRoundCardBackgroundColor="#50DA85"
+                                        app:optRoundCardBottomEdges="false"
+                                        app:optRoundCardCornerRadius="15dp"
+                                        app:optRoundCardLeftBottomCorner="true"
+                                        app:optRoundCardLeftTopCorner="false"
+                                        app:optRoundCardRightBottomCorner="true"
+                                        app:optRoundCardRightTopCorner="false">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/arb_1"
+                                            android:gravity="center"
+                                            android:onClick="gems_package_2"
+                                            android:padding="5dp"
+                                            android:text="Loading"
+                                            android:id="@+id/gems_package_2_price"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp" />
+                                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                                </LinearLayout>
+                            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                app:optRoundCardBackgroundColor="@color/white"
+                                app:optRoundCardBottomEdges="false"
+                                app:optRoundCardCornerRadius="15dp"
+                                app:optRoundCardLeftBottomCorner="true"
+                                app:optRoundCardLeftTopCorner="true"
+                                app:optRoundCardRightBottomCorner="true"
+                                app:optRoundCardRightTopCorner="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="90dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gems_n_2" />
+
+                                        <pl.droidsonroids.gif.GifImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gif_gem" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/arb_1"
+                                        android:gravity="center"
+                                        android:text="loading"
+                                        android:id="@+id/gems_package_3_count"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        app:optRoundCardBackgroundColor="#50DA85"
+                                        app:optRoundCardBottomEdges="false"
+                                        app:optRoundCardCornerRadius="15dp"
+                                        app:optRoundCardLeftBottomCorner="true"
+                                        app:optRoundCardLeftTopCorner="false"
+                                        app:optRoundCardRightBottomCorner="true"
+                                        app:optRoundCardRightTopCorner="false">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/arb_1"
+                                            android:gravity="center"
+                                            android:onClick="gems_package_3"
+                                            android:padding="5dp"
+                                            android:text="Loading"
+                                            android:id="@+id/gems_package_3_price"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp"
+                                            tools:ignore="OnClick" />
+                                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                                </LinearLayout>
+                            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                app:optRoundCardBackgroundColor="@color/white"
+                                app:optRoundCardBottomEdges="false"
+                                app:optRoundCardCornerRadius="15dp"
+                                app:optRoundCardLeftBottomCorner="true"
+                                app:optRoundCardLeftTopCorner="true"
+                                app:optRoundCardRightBottomCorner="true"
+                                app:optRoundCardRightTopCorner="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="90dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:padding="10dp"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gems_n_4" />
+
+                                        <pl.droidsonroids.gif.GifImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gif_gem" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/arb_1"
+                                        android:gravity="center"
+                                        android:text="loading"
+                                        android:id="@+id/gems_package_4_count"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        app:optRoundCardBackgroundColor="#50DA85"
+                                        app:optRoundCardBottomEdges="false"
+                                        app:optRoundCardCornerRadius="15dp"
+                                        app:optRoundCardLeftBottomCorner="true"
+                                        app:optRoundCardLeftTopCorner="false"
+                                        app:optRoundCardRightBottomCorner="true"
+                                        app:optRoundCardRightTopCorner="false">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/arb_1"
+                                            android:gravity="center"
+                                            android:onClick="gems_package_4"
+                                            android:padding="5dp"
+                                            android:text="Loading"
+                                            android:id="@+id/gems_package_4_price"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp"
+                                            tools:ignore="OnClick" />
+                                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                                </LinearLayout>
+                            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                app:optRoundCardBackgroundColor="@color/white"
+                                app:optRoundCardBottomEdges="false"
+                                app:optRoundCardCornerRadius="15dp"
+                                app:optRoundCardLeftBottomCorner="true"
+                                app:optRoundCardLeftTopCorner="true"
+                                app:optRoundCardRightBottomCorner="true"
+                                app:optRoundCardRightTopCorner="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="90dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="4dp"
+                                            android:gravity="center"
+                                            android:padding="10dp"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gems_n_6" />
+
+                                        <pl.droidsonroids.gif.GifImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gif_gem" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/arb_1"
+                                        android:gravity="center"
+                                        android:text="loading"
+                                        android:id="@+id/gems_package_5_count"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        app:optRoundCardBackgroundColor="#50DA85"
+                                        app:optRoundCardBottomEdges="false"
+                                        app:optRoundCardCornerRadius="15dp"
+                                        app:optRoundCardLeftBottomCorner="true"
+                                        app:optRoundCardLeftTopCorner="false"
+                                        app:optRoundCardRightBottomCorner="true"
+                                        app:optRoundCardRightTopCorner="false">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/arb_1"
+                                            android:gravity="center"
+                                            android:onClick="gems_package_5"
+                                            android:padding="5dp"
+                                            android:text="Loading"
+                                            android:id="@+id/gems_package_5_price"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp"
+                                            tools:ignore="OnClick" />
+                                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                                </LinearLayout>
+                            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_weight="1"
+                                app:optRoundCardBackgroundColor="@color/white"
+                                app:optRoundCardBottomEdges="false"
+                                app:optRoundCardCornerRadius="15dp"
+                                app:optRoundCardLeftBottomCorner="true"
+                                app:optRoundCardLeftTopCorner="true"
+                                app:optRoundCardRightBottomCorner="true"
+                                app:optRoundCardRightTopCorner="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:orientation="vertical">
+
+                                    <FrameLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="100dp"
+                                            android:layout_height="90dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gems_n_8" />
+
+                                        <pl.droidsonroids.gif.GifImageView
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="12dp"
+                                            android:gravity="center"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/gif_gem" />
+                                    </FrameLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/arb_1"
+                                        android:gravity="center"
+                                        android:text="loading"
+                                        android:id="@+id/gems_package_6_count"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp" />
+
+                                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="16dp"
+                                        app:optRoundCardBackgroundColor="#50DA85"
+                                        app:optRoundCardBottomEdges="false"
+                                        app:optRoundCardCornerRadius="15dp"
+                                        app:optRoundCardLeftBottomCorner="true"
+                                        app:optRoundCardLeftTopCorner="false"
+                                        app:optRoundCardRightBottomCorner="true"
+                                        app:optRoundCardRightTopCorner="false">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/arb_1"
+                                            android:gravity="center"
+                                            android:onClick="gems_package_6"
+                                            android:padding="5dp"
+                                            android:id="@+id/gems_package_6_price"
+                                            android:text="Loading"
+                                            android:textColor="@color/white"
+                                            android:textSize="11dp"
+                                            tools:ignore="OnClick" />
+                                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                                </LinearLayout>
+                            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/arb_1"
+                            android:text="@string/id_354"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:onClick="VIP_Dialog">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/vip_store"
+                                    app:civ_border_color="@color/white"
+                                    app:civ_border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="VIP"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/id_15"
+                                        android:textColor="#424242"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:elevation="0.8dp"
+                                android:visibility="visible"
+                                app:cardElevation="0.8dp"
+                                app:cardPreventCornerOverlap="true"
+                                card_view:cardBackgroundColor="#50DA85"
+                                card_view:cardCornerRadius="10dp">
+
+                                <TextView
+                                    android:id="@+id/vip_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/arb_1"
+                                    android:text="@string/id_16"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:onClick="match_plus">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/heart"
+                                    app:civ_border_color="@color/white"
+                                    app:civ_border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Match Plus"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/id_17"
+                                        android:textColor="#424242"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:elevation="0.8dp"
+                                android:visibility="visible"
+                                app:cardElevation="0.8dp"
+                                app:cardPreventCornerOverlap="true"
+                                card_view:cardCornerRadius="10dp">
+
+                                <TextView
+                                    android:id="@+id/match_plus_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/arb_1"
+                                    android:text="@string/id_16"
+                                    android:textColor="#50DA85"
+                                    android:textSize="14sp" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="15dp"
+                            android:onClick="gems_plus">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/gem_store"
+                                    app:civ_border_color="@color/white"
+                                    app:civ_border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Gem Plus"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/id_18"
+                                        android:textColor="#424242"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:elevation="0.8dp"
+                                android:visibility="visible"
+                                app:cardElevation="0.8dp"
+                                app:cardPreventCornerOverlap="true"
+                                card_view:cardCornerRadius="10dp">
+
+                                <TextView
+                                    android:id="@+id/gems_plus_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:fontFamily="@font/arb_1"
+                                    android:text="@string/id_16"
+                                    android:textColor="#50DA85"
+                                    android:textSize="14sp" />
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+                <View
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:id="@+id/loadingPrices"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            ads:adSize="MEDIUM_RECTANGLE"
+            ads:adUnitId="@string/bannerId" />
+    </RelativeLayout>
+</FrameLayout>

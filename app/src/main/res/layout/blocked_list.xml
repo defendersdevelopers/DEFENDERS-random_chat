@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".friends.blockedList">
+
+
+    <LinearLayout
+        android:id="@+id/noFriendsLayout"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/block_list"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+        </ImageView>
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#CC000000"
+            android:text="@string/id_56"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/friendsLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#CC000000"
+            android:text="@string/id_360"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arb_1"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:columnWidth="90dp"
+            tools:listitem="@layout/item_friend"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</FrameLayout>

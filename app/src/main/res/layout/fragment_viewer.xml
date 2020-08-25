@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".main.fragmentViewer">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+       android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/bottom_bar"
+        android:layoutDirection="rtl"
+        android:layout_marginBottom="5sp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="40">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/mainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:layout_margin="12dp"
+            android:scaleType="fitCenter"
+            android:onClick="mainFragment"
+            android:src="@drawable/random"
+            tools:ignore="OnClick"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/historyFragment"
+            android:layout_margin="12dp"
+            android:layout_weight="10"
+            android:scaleType="fitCenter"
+            android:onClick="historyFragment"
+            android:src="@drawable/hiatory_azar"
+            tools:ignore="OnClick"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:id="@+id/matchesFragment"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:onClick="matchesFragment"
+            android:src="@drawable/match"
+            tools:ignore="OnClick"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:id="@+id/chatFragment"
+            android:scaleType="fitCenter"
+            android:layout_margin="12dp"
+            android:onClick="chatFragment"
+            android:src="@drawable/message_azar_us"
+            tools:ignore="OnClick"/>
+    </LinearLayout>
+
+
+
+    <FrameLayout
+android:id="@+id/openMain"
+        android:layout_gravity="center"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_spotify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            fancy:fb_borderColor="@color/colorPrimary"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorPrimary"
+            fancy:fb_focusColor="@color/colorPrimaryDark"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="@string/id_609"
+            fancy:fb_textColor="@color/colorPrimary" />
+        <TextView
+            android:textColor="@color/white"
+            android:text="@string/id_128"
+            android:fontFamily="@font/arb_1"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+</FrameLayout>

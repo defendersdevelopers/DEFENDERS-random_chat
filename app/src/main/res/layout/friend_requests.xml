@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".friends.friendRequests"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/id_130"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/back_blue_left"
+            android:layout_gravity="center"
+            android:padding="7dp"
+
+            android:onClick="back"
+            android:tint="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:ignore="OnClick"
+            >
+        </ImageView>
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        tools:listitem="@layout/item_friend_request"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="1"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+</LinearLayout>

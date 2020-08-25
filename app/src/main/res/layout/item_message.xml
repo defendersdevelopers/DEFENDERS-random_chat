@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/container"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/myItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="start"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/me_profile_image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/loading"
+
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:id="@+id/top_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_toRightOf="@+id/profile_image"
+
+                app:optRoundCardBackgroundColor="@color/colorPrimary"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="15dp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/me_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairoregular"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="Hi ! i'm jacky from melano i'm so happy talking to you " />
+
+                    <ImageView
+                        android:id="@+id/image_message_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:visibility="gone" />
+
+                    <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+                        android:id="@+id/voice_message_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:enableVisualizer="true"
+                        android:visibility="gone"
+                        app:visualizationPlayedColor="@color/white"
+                        app:visualizationNotPlayedColor="#000"
+                        app:playPauseBackgroundColor="@color/sent_color"
+                        android:layout_margin="10dp"
+                        app:seekBarProgressColor="#000"
+                        app:showShareButton="false"
+
+                        app:playPauseCornerRadius="100"
+                        app:showTiming="true"
+                        app:viewCornerRadius="100"
+                        app:viewBackground="@color/sent_color"
+                        app:progressTimeColor="@color/white"
+                        app:seekBarThumbColor="@color/white"
+
+                        app:playProgressbarColor="@color/white"
+                        />
+
+                </LinearLayout>
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/statue"
+                android:visibility="gone"
+                android:src="@drawable/delivered" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myFriendItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="25dp"
+android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friend_profile_image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/loading"
+
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+
+            app:optRoundCardBackgroundColor="@color/white"
+
+
+            app:optRoundCardBottomEdges="false"
+            app:optRoundCardCornerRadius="15dp"
+            app:optRoundCardLeftBottomCorner="true"
+            app:optRoundCardRightBottomCorner="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/friend_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/cairoregular"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Heey! i'm Dan ,nice to talk to you"
+                />
+
+                    <TextView
+                        android:id="@+id/textAfterTrans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/cairoregular"
+                        android:text=""
+                        android:textColor="#ADF6FF"
+                        android:textSize="11sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_message_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+
+
+
+                <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+                    android:id="@+id/voice_message_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:enableVisualizer="true"
+
+                    app:visualizationPlayedColor="@color/colorPrimary"
+                    app:visualizationNotPlayedColor="#000"
+                    app:playPauseBackgroundColor="@color/colorPrimary"
+                    android:visibility="gone"
+                    app:seekBarProgressColor="#000"
+                    app:showShareButton="false"
+                    android:layout_margin="10dp"
+                    app:playPauseCornerRadius="100"
+                    app:showTiming="true"
+                    app:viewCornerRadius="100"
+                    app:viewBackground="@color/received_color"
+                    app:progressTimeColor="@color/colorPrimary"
+                    app:seekBarThumbColor="@color/colorPrimary"
+
+                    app:playProgressbarColor="@color/colorPrimary"
+                    />
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/textVoiceCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layoutDirection="ltr"
+        android:gravity="center">
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:optRoundCardBackgroundColor="@color/white"
+            app:optRoundCardBottomEdges="false"
+            app:optRoundCardCornerRadius="15dp"
+            app:optRoundCardLeftBottomCorner="true"
+            app:optRoundCardLeftTopCorner="true"
+            app:optRoundCardRightBottomCorner="true"
+            app:optRoundCardRightTopCorner="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="17dp"
+                        android:src="@drawable/cc" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Audio Call"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairoregular"
+                            android:text="Tap to call again"
+                            android:textColor="#A8A8A8" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textVideoCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layoutDirection="ltr"
+        android:gravity="center">
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:optRoundCardBackgroundColor="@color/white"
+            app:optRoundCardBottomEdges="false"
+            app:optRoundCardCornerRadius="15dp"
+            app:optRoundCardLeftBottomCorner="true"
+            app:optRoundCardLeftTopCorner="true"
+            app:optRoundCardRightBottomCorner="true"
+            app:optRoundCardRightTopCorner="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="17dp"
+                        android:src="@drawable/video_2"
+                        android:tint="#BCBCBC" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Video Call"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cairoregular"
+                            android:text="Tap to call again"
+                            android:textColor="#A8A8A8" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+    </RelativeLayout>
+</LinearLayout>

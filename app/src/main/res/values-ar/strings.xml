@@ -1,0 +1,413 @@
+<resources>
+    <string name="app_name">KYLIE</string>
+    <string name="gems_plus_2">Get 3,300 additional gems. You can get more gems in every purchase. Bonus rates increase with long-term subscriptions</string>
+    <string name="gems_plus">Get 2,999 jewels, which are valued at PRICE_HERE, in addition to 300 additional gems per month. Take advantage of the best prices for more jewels!</string>
+    <string name="id_1">حول كايلى</string>
+    <string name="id_2">تواصل مع العديد من المستخدمين وقم بصنع صداقات جديدة من مختلف دول العالم وتعرف على الثقافات المتنوعة من حولك , قم ببناء علاقات جديدة من اى مكان تريد</string>
+    <string name="id_3">" "شروط الخدمة" "</string>
+    <string name="id_4">" "سياسة الخصوصية" "</string>
+    <string name="id_5">حذف الحساب</string>
+    <string name="id_6">الترجمه</string>
+    <string name="id_7">اكتب رسالتك هنا</string>
+    <string name="id_8">هل تلقيت دعوة من احد اصدقائك ؟</string>
+    <string name="id_9">كود الدعوة</string>
+    <string name="month">شهر</string>
+    <string name="id_10">ارسل الكود</string>
+    <string name="id_11">لا لم اتلق دعوة</string>
+    <string name="id_12">المتجر</string>
+    <string name="id_14">جواهرى</string>
+    <string name="id_15">فتح الخصائص المميزة فقط للمشتركين!</string>
+    <string name="id_16">جار التحميل …</string>
+    <string name="id_17">تعرف على المعجبين بك . اسحب و اكتشف الكثير من البروفيلات كما تريد .</string>
+    <string name="id_18">احصل على 3300 جوهرة كل شهر. احصل على تخفيض على الجواهر مدى الحياة</string>
+    <string name="id_19">المحفوظات</string>
+    <string name="id_20">لا يوجد أى محفوظات . إسحب الشاشة لبدء محادقة مع شخص عشوائى جديد !</string>
+    <string name="id_21">التوافقات</string>
+    <string name="id_22">تخطى</string>
+    <string name="id_23">تحديد الإهتمامات</string>
+    <string name="id_24">قم بتحديد الهوايات التى تحبها وستظهر فى ملفك الشخصى</string>
+    <string name="id_25">متابعة</string>
+    <string name="id_26">ابحث</string>
+    <string name="id_27">قام هذا المستخدم بحظرك</string>
+    <string name="id_28">هوية كايلى الخاصة بصديقك</string>
+    <string name="id_29">إضافة صديق</string>
+    <string name="id_30">إضافة الاصدقاء بواسطة الهوية</string>
+    <string name="id_31">دعوة من خلال الرسائل النصية القصيرة</string>
+    <string name="id_32">دعوة من خلال التطبيق</string>
+    <string name="id_35">مغادرة التطبيق</string>
+    <string name="id_36">هل انت متأكد من رغبتك فى الخروج ؟</string>
+    <string name="id_37">تأكيد</string>
+    <string name="id_38">تراجع</string>
+    <string name="id_39">مسح المحفوظات</string>
+    <string name="id_40">سيتم حذف سجل المطابقه يرجى العلم انه لا يمكن التراجع عن هذه العمليه</string>
+    <string name="id_41">عوده</string>
+    <string name="id_42">احذف الان</string>
+    <string name="id_43">محظور من قبل</string>
+    <string name="id_44">قد قمت بحظر جهة الاتصال هذه مسبقا , يمكنك ازالة الحظر من الإعدادات</string>
+    <string name="id_46">إخفاء</string>
+    <string name="id_47">إدارة الحظر</string>
+    <string name="id_48">لقد اخترت " تخطى " </string>
+    <string name="id_49">يمكنك تجاهل احد المستخدمين بالضغط على زر تخطى , هل انت متاكد من رغبنك فى تجاهل هذا المستخدم ؟</string>
+    <string name="id_50">تأكيد</string>
+    <string name="id_51">تراجع</string>
+    <string name="id_52">حسابك متوقف من قبل الادارة</string>
+    <string name="id_53">تم ايقاف حسابك بسبب سوء استخدام / الاحتيال على خدمات كايلى , انت كنت تظن ان هذا حدث عن طريق الخطأ راسلنا عبر بريدنا الالكترونى</string>
+    <string name="id_54">تحقق مجددا</string>
+    <string name="id_55">تسجيل الخروج</string>
+    <string name="id_56">ليس لديك أى اصدقاء محظورون</string>
+    <string name="id_57">الاصدقاء</string>
+    <string name="id_58">الرسائل</string>
+    <string name="id_59">لا يوجد سجل للمحادثات السابقة فى الوقت الحالى . ابدأ الدردشة مع مستخدمى كايلى وسوف نبدا فى انشاء سجل للدردشات الخاصة بك .</string>
+    <string name="id_60">لا يوجد اصدقاء فى قائمه الاصدقاء لديك !\n تعرف على اصدقاء جدد الان</string>
+    <string name="id_61">قم بإكمال بياناتك</string>
+    <string name="id_62">هوية كايلى - اسم المستخدم</string>
+    <string name="id_63">اسم المستخدم</string>
+    <string name="id_64">تاريخ ميلادك</string>
+    <string name="id_65">إختر تاريخ ميلادك</string>
+    <string name="id_66">النوع</string>
+    <string name="id_67">أنثى</string>
+    <string name="id_68">ذكر</string>
+    <string name="id_69">إنشاء حساب</string>
+    <string name="id_70">شراء الجواهر</string>
+    <string name="id_71">مطلوب 1300 جوهرة لفتح جميع المناطق الإقليمية لمدة 7 أيام.</string>
+    <string name="id_72">إلغاء</string>
+    <string name="id_73">شراء</string>
+    <string name="id_74">يمكنك ربح الجواهر عن طريق :</string>
+    <string name="id_75">إذا كنت تستمتع بتطبيقنا قيمنا على google play</string>
+    <string name="id_76">أخبر أصدقاءك عن التطبيق</string>
+    <string name="id_77">ادع أصدقائك واكسب الجواهر</string>
+    <string name="id_78">اكسب من خلال مشاهدة مقاطع الفيديو</string>
+    <string name="close">إغلاق</string>
+    <string name="id_81">3.300 جوهرة كل شهر</string>
+    <string name="id_82">احصل على الجواهر الاضافية من متجر الجواهر</string>
+    <string name="id_84">-3 شهر</string>
+    <string name="id_85">6–4 شهر</string>
+    <string name="id_86">7- شهر</string>
+    <string name="id_87">تفضيلات المناطق الجغرافية</string>
+    <string name="id_88">متوازن</string>
+    <string name="id_89">دولتى</string>
+    <string name="id_90">عالمى</string>
+    <string name="ok">موافق</string>
+    <string name="id_91">تفضيلات المناطق الجغرافية</string>
+    <string name="id_92">قم بالسحب وقابل اصدقاء من حول العالم</string>
+    <string name="id_93">13/ مكالمة</string>
+    <string name="id_94">يمكنك تجربة عضويتنا المميزة للشخصيات الهامة والتى تمكنك من استخدام مميزات عديدة ليس فقط تفضيلات الاماكن الجغرافية</string>
+    <string name="id_95">تجربة عضويتنا للشخصيات الهامة</string>
+    <string name="id_96">كودك هو :</string>
+    <string name="id_97">اكسب 15 💎 لدعوة أصدقائك</string>
+    <string name="id_98">سوف تكسب 15 💎 لكل صديق يسجل برمزك</string>
+    <string name="id_99">يمكنك تجربة التوافق الاضافى والتمتع بالعديد من المميزات الرائعة الهامة والتى تمكنك من استخدام ادوات جديدة للحصول على تجربة رائعة وفريدة</string>
+    <string name="id_100">خصم 20%</string>
+    <string name="id_102">التأكيد و الدفع</string>
+    <string name="id_103">سيكلفك تغيير فلتر تفضيلات الجنس 13 جوهرة للمكالمة الواحدة.</string>
+    <string name="id_104">إلغاء</string>
+    <string name="id_105">ادفع الان</string>
+    <string name="id_106">التأكيد و الدفع</string>
+    <string name="id_107">سيكلفك تغيير فلتر تفضيلات المناطق الجغرافية 13 جوهرة للمكالمة الواحدة.</string>
+    <string name="id_108">ادفع الان</string>
+    <string name="id_109">الإبلاغ عن السلوكيات غير اللائقة</string>
+    <string name="id_110">لغة غير لائقة</string>
+    <string name="id_111">الإساءة اللفظية ، السب</string>
+    <string name="id_112">سلوك غير لائق</string>
+    <string name="id_120">عُري ، تعرض غير لائق ، إلخ.</string>
+    <string name="id_121">إلغاء</string>
+    <string name="id_122">جارى البحث عن صديق جديد…</string>
+    <string name="id_124">إزالة الإعلانات</string>
+    <string name="id_113">تفضيلات الجنس</string>
+    <string name="id_118">ذكر وإنثى</string>
+    <string name="free">مجاناً</string>
+    <string name="edit">تعديل صفحتك</string>
+    <string name="about">عنى</string>
+    <string name="w_somthing">اكتب شيئا عن نفسك.</string>
+    <string name="interests">إهتماماتى</string>
+    <string name="ch_interests">إختر اهتماماتك</string>
+    <string name="id_125">البلدان المفضله</string>
+    <string name="id_127">إختر الاماكن اللتى تنوى زيارتها</string>
+    <string name="id_128">دعنا نقابل صديقا جديدا الان !</string>
+    <string name="id_130">طلبات الصداقه</string>
+    <string name="id_131">تواصل مع العالم</string>
+    <string name="id_132">الدخول بإستخدام</string>
+    <string name="id_133">تواجة مشكلة فى تسجيل الدخول؟</string>
+    <string name="id_134">عند المتابعة فإنك توافق على</string>
+    <string name="terms">" "شروط الخدمة" "</string>
+    <string name="and">" "و" "</string>
+    <string name="pr">" "سياسة الخصوصية" "</string>
+    <string name="id_136">قم بإختيار هواياتك واهتماماتك</string>
+    <string name="id_145">دع الاخرين يعرفون المذيد عنك !</string>
+    <string name="skip">تخطى</string>
+    <string name="id_137">دعوة</string>
+    <string name="id_13">قبول</string>
+    <string name="id_139">رفض</string>
+    <string name="id_138">مراسلة</string>
+    <string name="id_141">الاهتمامات</string>
+    <string name="id_140">تفاعلات كايلى</string>
+    <string name="id_142">عرض خاص</string>
+    <string name="id_143">فتح</string>
+    <string name="id_144">تحديد منطقة</string>
+    <string name="id_252">الجنس</string>
+    <string name="sorry">نعتذر , ليس لديك اى اعجابات حتى الان</string>
+    <string name="id_148">الاهتمامات</string>
+    <string name="loc">الموقع</string>
+    <string name="sp">مميزاتى</string>
+    <string name="time">الوقت المحلى</string>
+    <string name="id_149">عضوية الشخصيات الهامة</string>
+    <string name="id_150">وسام الشخصيات الهامة</string>
+    <string name="id_151">تشغيل/ إيقاف وسام الشخصيات الهامة</string>
+    <string name="id_152">تفضيلات المناطق الجغرافية</string>
+    <string name="id_154">قابل اصدقاء من جميع انحاء العالم</string>
+    <string name="id_155">تغيير الاسم المستعار</string>
+    <string name="id_156">يمكنك تغيير اسمك المستعار</string>
+    <string name="id_157">الكاميرا الخلفية</string>
+    <string name="id_158">اختر ما تريد اظهارة للاخرين</string>
+    <string name="id_159">تحديد موقع مميز</string>
+    <string name="id_160">تغيير موقعك الخاص الى مكان ممتع</string>
+    <string name="id_170">يمكنك تجربة عضويتنا المميزة للشخصيات الهامة والتى تمكنك من استخدام مميزات عديدة</string>
+    <string name="id_161">السعر الاصلى</string>
+    <string name="save">Save</string>
+    <string name="id_162">جواهرى</string>
+    <string name="id_163">شراء الجواهر</string>
+    <string name="id_153">الأصدقاء المحظورون</string>
+    <string name="id_164">مسح المحغوظات</string>
+    <string name="id_165">قائمة المعجبين بي</string>
+    <string name="id_166">اخفاء عمرى</string>
+    <string name="id_167">اخفاء موقعى</string>
+    <string name="id_168">تغيير موقعى</string>
+    <string name="id_169">تغيير الاسم المستعار</string>
+    <string name="id_171">وسام الشخصيات الهامة</string>
+    <string name="id_172">رمز تطبيق الشخصيات الهامة</string>
+    <string name="id_175">حول</string>
+    <string name="help">المساعدة</string>
+    <string name="id_178">طلبات الصداقة</string>
+    <string name="share">مشاركة</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="id_179">لقد تم انهاء مكالمة فديو</string>
+    <string name="id_180">لقد تم انهاء مكالمة صوتية</string>
+    <string name="id_181">لقد ارسلت صورة</string>
+    <string name="id_182">لقد تم ارسال صورة</string>
+    <string name="id_183">لقد ارسلت رسالة صوتيه</string>
+    <string name="id_184">لقد تم ارسال رسالة صوتيه</string>
+    <string name="id_185">عذرا , تاكد من الاتصال بالانترنت</string>
+    <string name="id_186">لقد قامت جهة الاتصال هذه بحظرك , الكتير من البلاغات قد يؤدى لإغلاق حسابك</string>
+    <string name="id_187">حسنا</string>
+    <string name="id_189">تم الارسال بنجاح</string>
+    <string name="id_190">عذرا حدث خطأ ما</string>
+    <string name="id_191">عذرا حدث خطأ ما , تاكد من الاتصال بالانترنت</string>
+    <string name="id_192">تم تحميل الصوره بنجاح</string>
+    <string name="id_193">عذرا حدث خطأ ما , تاكد من الاتصال بالانترنت</string>
+    <string name="id_194">تم ارسال طلب صداقة بنجاح !</string>
+    <string name="id_198">قم باضافتى فى كايلى وابدا بالتعرف على اصدقاء جدد حول العالم</string>
+    <string name="id_199">مرحبا</string>
+    <string name="id_200">ارسال باستخدام</string>
+    <string name="id_201">الهويه الخاصه بى هى</string>
+    <string name="id_202">قم بإدخال اسم المستخدم اولا</string>
+    <string name="id_203">ازالة الحظر</string>
+    <string name="id_204">قام هذا المستخدم بحظرك</string>
+    <string name="id_205">بدء الدردشه</string>
+    <string name="id_206">قبول طلب الصداقه</string>
+    <string name="id_207">تم إرسال طلب صداقه</string>
+    <string name="id_208">إضافة صديق</string>
+    <string name="id_209">تم ارسال طلب الصداقه بنجاح !</string>
+    <string name="id_211">\"تم دعوتك بواسطة \"</string>
+    <string name="id_212">\" لاستخدام تطبيق كايلى\"</string>
+    <string name="id_213">تم ارسال الدعوة</string>
+    <string name="id_214">دعوة</string>
+    <string name="id_215">لقد تم الارسال بنجاح !</string>
+    <string name="id_216">تاكد من تثبيت تطبيق رسائل ومنح الاذونات</string>
+    <string name="id_217">تم ازالة طلب الصداقه بنجاح !</string>
+    <string name="id_218">تم قبول طلب الصداقة بنجاح !</string>
+    <string name="id_219">تم ازالة المستخدم من قائمة الاصدقاء المحظورون بنجاح !</string>
+    <string name="id_221">الغاء الاشتراك</string>
+    <string name="id_222">هذا المنتج غير متوافر مؤقتا</string>
+    <string name="id_223">No application can handle this request. Please install a web browser</string>
+    <string name="id_224">مرحبا دعنى ادعوك لتجربه الابلكيشن الرائع كايلى ومشاركتى فى اوقات ممتعه</string>
+    <string name="id_225">رقم الدعوه خاصتى هو</string>
+    <string name="id_226">يجب ان تكون اكبر من 18 عام لاستخدام التطبيق</string>
+    <string name="id_227">هذا الحقل مطلوب</string>
+    <string name="id_228">يجب ان يتكون معرف المستخدم من حروف انجليزيه وارقام وبدون مسافات</string>
+    <string name="id_229">اختر تاريخ ميلادك</string>
+    <string name="id_230">برجاء اختيار الجنس</string>
+    <string name="id_231">اسم المستخدم موجود من قبل</string>
+    <string name="id_232">اختر صورة</string>
+    <string name="id_234">تحديد</string>
+    <string name="id_235">إلغاء</string>
+    <string name="id_237">تم تحديث البلدان بنجاح !</string>
+    <string name="id_238">قم بإكمال البيانات رجاءا</string>
+    <string name="id_239">حذف الحساب</string>
+    <string name="id_240">سيتم حذف الحساب نهائيا بمجرد الموافقه , لا يمكن لفريق الدعم التراجع عن هذه الخطوه</string>
+    <string name="id_241">قم بادخال كود الدعوة</string>
+    <string name="id_242">هذا الكود غير صالح</string>
+    <string name="id_243">إلغاء</string>
+    <string name="id_244">تخطى</string>
+    <string name="id_245">يجب عليك تحديد اهتمام واحد على الاقل</string>
+    <string name="id_246">جار رفع الملفات المحدده ❤</string>
+    <string name="id_247">برجاء الانتظار ❤</string>
+    <string name="id_249">عالمى</string>
+    <string name="id_253">هذة الميزة متوفرة فى عضوية الشخصيات الهامة فقط</string>
+    <string name="id_254">يتم استخدام 13 جواهر فى المقابلة الواحدة عندما يكون فلتر الجنس مفعل</string>
+    <string name="id_255">رجاء تأكد من الاتصال بالانترنت</string>
+    <string name="id_256">مطلوب 13 جوهرة لفتح جميع المناطق الإقليمية لهذه المكالمه.</string>
+    <string name="id_257">تم تفعيل فلتر المناطق الجغرافية بنجاح !</string>
+    <string name="id_258">تم تفعيل فلتر الجنس بنجاح !</string>
+    <string name="id_259">متوازن</string>
+    <string name="id_261">لديك طلب صداقه جديد</string>
+    <string name="id_262">تم قبول طلب الصداقه الذى ارسلته !</string>
+    <string name="id_263">لقد قام هذا المستخدم بتسجيل اعجابه بك للتو !</string>
+    <string name="id_264">هذة الميزة متوفرة فى عضوية الشخصيات الهامة فقط</string>
+    <string name="id_265">لقد قمت بالفغل بارسال طلب صداقة من قبل</string>
+    <string name="id_266">انت بالفغل من اصدقاء هذا المستخدم</string>
+    <string name="id_267">تهانينا ! انتما اصدقاء على كايلى الان</string>
+    <string name="id_268">تم ارسال طلب الصداقة بنجاح !</string>
+    <string name="id_269">تم الارسال بنجاح</string>
+    <string name="id_270">تم ازالة طلب الصداقة بنجاح !</string>
+    <string name="id_271">تم قبول طلب الصداقة بنجاح !</string>
+    <string name="id_272">عذرا لا يمكن تحديد الموقع فى الوقت الحالى</string>
+    <string name="id_273">لقد تم الغاء عملية الشراء , نتمنى عودتك قريبا</string>
+    <string name="id_274">تمت عملية الشراء بنجاح !</string>
+    <string name="id_275">\"حدث خطأ اثناء عملية الشراء , رقم الخطأ : \"</string>
+    <string name="id_276">عذرا ما زال الحساب مغلقا , حاول مجددا لاحقا</string>
+    <string name="id_277">رجاء قم بالاتصال بال wifi او تاكد من تغطية ال gps لمنطقتك</string>
+    <string name="id_278">تم تغيير الموقع بنجاح !</string>
+    <string name="id_279">انت بالفعل مشترك فى هذه الخدمة</string>
+    <string name="id_280">شهريا</string>
+    <string name="id_281">قائمة المعجبين بك</string>
+    <string name="id_282">تمكن من معرفة الاشخاص المعجبة بك</string>
+    <string name="id_283">يمكنك تصفح عدد لا نهائى من البطاقات كل يوم</string>
+    <string name="id_284">بطاقات غير محدودة</string>
+    <string name="id_285">لا ترغب فى اظهار عمرك ؟ يمكنك إخفاءه</string>
+    <string name="id_286">إخفاء عمرى</string>
+    <string name="id_287">بطاقتك ستحصل على اطار ذهبى يميزها عن باقى بطاقات الاعضاء</string>
+    <string name="id_288">إطار البروفايل المميز</string>
+    <string name="id_289">لا ترغب فى اظهار موقعك ؟ يمكنك اخفاءه</string>
+    <string name="id_290">إخفاء موقعى</string>
+    <string name="id_291">عندما تختار اعجاب شديد باحد المستخدمين ستظهر بطاقتك على قمة البطاقات الاخرى التى تظهر لهذا المستخدم</string>
+    <string name="id_292">الإعجاب الشديد</string>
+    <string name="id_293">تراسل مع من يعجبونك وكون صداقات معهم !</string>
+    <string name="id_294">الرسائل</string>
+    <string name="id_295">شهر</string>
+    <string name="id_296">لم تعد معجبا الان !</string>
+    <string name="id_297">تهانينا تم تبادل الاعجاب , انتم الان اصدقاء</string>
+    <string name="id_298">تم الارسال بنجاح !</string>
+    <string name="id_299">لم تعد معجبا الان !</string>
+    <string name="id_300">تهانينا تم تبادل الاعجاب , انتم الان اصدقاء</string>
+    <string name="id_301">تم الارسال بنجاح !</string>
+    <string name="id_302">لا شئ</string>
+    <string name="id_303">alien</string>
+    <string name="id_304">baby chewbacca</string>
+    <string name="id_305">black mud</string>
+    <string name="id_306">blizzard</string>
+    <string name="id_307">bubble</string>
+    <string name="id_308">candle face</string>
+    <string name="id_309">colored cloud</string>
+    <string name="id_310">creepy face</string>
+    <string name="id_311">diver</string>
+    <string name="id_312">face bubble</string>
+    <string name="id_313">fire</string>
+    <string name="id_314">football</string>
+    <string name="id_315">heart</string>
+    <string name="id_316">humanoid</string>
+    <string name="id_317">hunterst</string>
+    <string name="id_318">jarhead</string>
+    <string name="id_319">jelly cube</string>
+    <string name="id_320">joker</string>
+    <string name="id_321">mummy</string>
+    <string name="id_322">plasticine</string>
+    <string name="id_323">puberty</string>
+    <string name="id_324">pumpkin</string>
+    <string name="id_325">queen</string>
+    <string name="id_326">rain</string>
+    <string name="id_327">rainbow</string>
+    <string name="id_328">roulette</string>
+    <string name="id_329">santa</string>
+    <string name="id_330">shattered face</string>
+    <string name="id_331">sketch face</string>
+    <string name="id_332">snowman</string>
+    <string name="id_333">toon</string>
+    <string name="id_334">topology</string>
+    <string name="id_335">vinyl face</string>
+    <string name="id_336">werewolf</string>
+    <string name="id_337">wool beard</string>
+    <string name="id_338">habana</string>
+    <string name="id_339">reading eyes</string>
+    <string name="id_340">transparent</string>
+    <string name="id_341">chanel butterfly</string>
+    <string name="id_342">barner honey</string>
+    <string name="id_343">round metal</string>
+    <string name="id_344">black</string>
+    <string name="id_349">Let me recommend you this application</string>
+    <string name="id_346">تم ارسال البلاغ للمراجعة بنجاح !</string>
+    <string name="id_347">تهانينا , تم حذف السجل بنجاح</string>
+    <string name="id_348">تم حفظ التغيير بنجاح !</string>
+    <string name="id_350">اكتب اسمك الجديد</string>
+    <string name="id_351">موافق</string>
+    <string name="id_352">قم بادخال اسمك اولا</string>
+    <string name="id_353">تم تغيير اسمك الوهمى بنجاح !</string>
+    <string name="id_354">مميزات اضافية</string>
+    <string name="id_355">لا يوجد لديك اى توافقات حاليا</string>
+    <string name="id_356">هذة الميزة متوفرة فى عضوية الشخصيات الهامة فقط</string>
+    <string name="id_357">جار تحميل الصوره</string>
+    <string name="id_358">تم قبول طلب الصداقة بنجاح !</string>
+    <string name="id_359">تم ازالة طلب الصداقه بنجاح !</string>
+    <string name="id_360">الاصدقاء المحظورون</string>
+    <string name="id_361">تمكن من معرفة الاشخاص المعجبة بك</string>
+    <string name="id_362">الأصدقاء</string>
+    <string name="id_363">لقد وصلت الى رقم البطاقات المسموح لك لهذا اليوم , يمكنك تجربة match plus لتتمكن من تصفح عدد غير محدود من البطاقات كل يوم</string>
+    <string name="id_364">فلتصبح مميزا الان</string>
+    <string name="id_365">قم بسحب الشاشة لليسار للبحث</string>
+    <string name="id_366">لايمكنك الرد على هذه المحادثه , اعرف المزيد</string>
+    <string name="id_173">اربح الجواهر</string>
+    <string name="id_176">الهويه الخاصه بى هى</string>
+    <string name="id_177">مجاناً</string>
+    <string name="id_188">الموقع</string>
+    <string name="id_195">الإبلاغ عن هذا المستخدم</string>
+    <string name="id_197">قائمة المعجبين بك</string>
+    <string name="id_798">سجل المطابقات</string>
+    <string name="id_599">اكتب رسالتك هنا</string>
+    <string name="id_210">قائمة المعجبين بى</string>
+    <string name="id_250">المزيد</string>
+    <string name="id_251">ذكر</string>
+    <string name="you">" ""انت :" "</string>
+    <string name="id_600">التسوق</string>
+    <string name="id_601">السباحة</string>
+    <string name="id_602">التزلج</string>
+    <string name="id_603">التنس</string>
+    <string name="id_604">الجيتار</string>
+    <string name="id_605">الشطرنج</string>
+    <string name="id_606">الابحار</string>
+    <string name="id_607">الدراجات</string>
+    <string name="id_608">كرة القدم</string>
+    <string name="id_609">حسنا</string>
+    <string name="id_610">نبذة مختصرة ^^</string>
+    <string name="id_611">غير موافق</string>
+    <string name="id_612">اسم المستخدم</string>
+    <string name="id_613">الدولة , المدينة</string>
+    <string name="id_614">الدولة</string>
+    <string name="id_615">مكالمة فيديو واردة</string>
+    <string name="id_616">مكالمة صوتية واردة</string>
+    <string name="id_617">قبول المكالمة</string>
+    <string name="id_618">رفض المكالمه</string>
+    <string name="id_619">رجاء قم بتفعيل الاذونات للمتابعة</string>
+    <string name="id_620">تم نسخ النص للحافظه بنجاح</string>
+
+    <string name="id_623">مجموعة الصور</string>
+    <string name="id_624">المميزات</string>
+
+    <string name="id_625">تغير لون المحادثة</string>
+    <string name="id_626">نسخ الرسالة</string>
+    <string name="id_627">تحميل لمعرض الصور</string>
+    <string name="id_628">إزالة لديك</string>
+    <string name="id_629">إزالة لدي الجميع</string>
+    <string name="id_630">حذف المحادثة</string>
+    <string name="id_631">الغاء الصداقة</string>
+    <string name="id_632">حظر</string>
+    <string name="id_633">لا توجد اى عناوين فى المكان المحدد</string>
+    <string name="id_634">يمكنك مراسلتنا عبر</string>
+    <string name="id_635">لقد تم حذف حسابك نهائيا !</string>
+    <string name="id_636">لم يقم احد بمحاولة التحدث معك عشوائيا بعد , جرب عضوية ماتش بلاس ليتم اقتراحك لاصدقاء اكثر!</string>
+
+    <string name="id_637">طلبات المراسلة</string>
+
+    <string name="id_720">تم الحظر بنجاح !</string>
+    <string name="bsr">تمت ازالة الحظر بنجاح!</string>
+    <string name="name">إدخل اسمك هنا للتعديل</string>
+    <string name="rem">تمت الازالة بنجاح!</string>
+</resources>

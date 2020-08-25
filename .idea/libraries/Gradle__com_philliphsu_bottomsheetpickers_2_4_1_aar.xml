@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.philliphsu:bottomsheetpickers:2.4.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58a1d04358dd30813c99f9e677b169ea/jetified-bottomsheetpickers-2.4.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58a1d04358dd30813c99f9e677b169ea/jetified-bottomsheetpickers-2.4.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58a1d04358dd30813c99f9e677b169ea/jetified-bottomsheetpickers-2.4.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/58a1d04358dd30813c99f9e677b169ea/jetified-bottomsheetpickers-2.4.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.philliphsu/bottomsheetpickers/2.4.1/86d2849119f15cef135791e63bb8e850531100d7/bottomsheetpickers-2.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.philliphsu/bottomsheetpickers/2.4.1/c18dedd3ca6b9d47b508ce308bd40e30faf4e7d4/bottomsheetpickers-2.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

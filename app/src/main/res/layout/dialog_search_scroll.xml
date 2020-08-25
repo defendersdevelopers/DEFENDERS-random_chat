@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vip_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search_1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:text="@string/id_122"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/not_vip_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:text="@string/id_122"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+          android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="MEDIUM_RECTANGLE"
+
+            ads:adUnitId="@string/bannerId"/>
+
+        <FrameLayout
+            android:id="@+id/remove_ads_scroll"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary">
+
+            <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="#2E2E39"
+                fancy:fb_focusColor="@color/colorPrimaryDark"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="@string/id_124"
+                fancy:fb_textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:src="@drawable/crown_2" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

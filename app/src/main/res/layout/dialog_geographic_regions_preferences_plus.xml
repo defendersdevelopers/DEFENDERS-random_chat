@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/close"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cancel"
+        android:padding="12dp"
+        android:tint="#CDA1A1A1"
+        android:layout_marginEnd="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+<ImageView
+    android:scaleType="fitCenter"
+    android:layout_gravity="center"
+    android:src="@drawable/gps_5"
+    android:layout_width="200dp"
+    android:layout_height="200dp"/>
+    <TextView
+        android:textColor="#373737"
+        android:layout_marginTop="20dp"
+        android:text="@string/id_91"
+        android:fontFamily="@font/arb_1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="#5A5A5A"
+        android:text="@string/id_92"
+        android:fontFamily="@font/arb_1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:id="@+id/ok"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/btn_spotify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#3C76F3"
+            fancy:fb_focusColor="@color/colorPrimaryDark"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="@string/id_609"
+            fancy:fb_textColor="#3C76F3" />
+        <LinearLayout
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/diamond"
+                android:layout_gravity="end"
+                android:layout_marginEnd="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:textColor="@color/white"
+                android:text="@string/id_93"
+                android:fontFamily="@font/arb_1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <TextView
+        android:textColor="#5A5A5A"
+        android:text="@string/id_94"
+        android:fontFamily="@font/arb_1"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="60dp"
+        android:id="@+id/vip"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <mehdi.sakout.fancybuttons.FancyButton
+            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#FBC627"
+            fancy:fb_focusColor="@color/colorPrimaryDark"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="@string/id_609"
+
+            fancy:fb_textColor="#FBC627" />
+        <LinearLayout
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/white"
+                android:text="@string/id_95"
+                android:fontFamily="@font/arb_1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

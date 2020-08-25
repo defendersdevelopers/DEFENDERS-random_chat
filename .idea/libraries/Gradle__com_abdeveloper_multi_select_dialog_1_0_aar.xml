@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.abdeveloper:multi-select-dialog:1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54c9abb3de6bb4ca74f90774af036df2/jetified-multi-select-dialog-1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54c9abb3de6bb4ca74f90774af036df2/jetified-multi-select-dialog-1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54c9abb3de6bb4ca74f90774af036df2/jetified-multi-select-dialog-1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.abdeveloper/multi-select-dialog/1.0/a1105dc0e3acaf56c3c54e0875272cdd12a8f3fe/multi-select-dialog-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.abdeveloper/multi-select-dialog/1.0/e666224a5fcc978ef7f18eb98c3975f3566c9e2/multi-select-dialog-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

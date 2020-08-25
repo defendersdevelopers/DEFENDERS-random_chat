@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="56dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".history.History">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="7dp"
+            android:src="@drawable/gear"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:text="@string/id_19"
+            android:textColor="#353535"
+            android:textSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+    </RelativeLayout>
+
+
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:id="@+id/friendsLayout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/history_small"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:layoutDirection="ltr"
+              android:orientation="horizontal"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+              tools:listitem="@layout/item_history_small" />
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/history_big"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:layout_marginTop="15dp"
+              android:layoutDirection="ltr"
+              android:orientation="horizontal"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+              tools:listitem="@layout/item_history_big" />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/noFriendsLayout"
+          android:layout_width="match_parent"
+          android:background="@color/white"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="gone">
+
+          <ImageView
+              android:layout_width="210dp"
+              android:layout_height="210dp"
+              android:layout_gravity="center"
+              android:src="@drawable/page_2"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="20dp"
+              android:layout_marginBottom="20dp"
+              android:fontFamily="@font/arb_1"
+              android:gravity="center"
+              android:text="@string/id_20"
+              android:textColor="#CC000000"
+              android:textSize="16sp" />
+      </LinearLayout>
+  </FrameLayout>
+</LinearLayout>

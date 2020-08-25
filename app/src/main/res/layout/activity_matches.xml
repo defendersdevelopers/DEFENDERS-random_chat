@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="56dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".matchesActivtiy.matchesActivtiy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:text="@string/id_21"
+            android:textColor="#CD000000"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/noInterestsYetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_margin="60dp"
+                android:fontFamily="@font/arb_1"
+                android:gravity="center"
+                android:text="@string/id_355" />
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:id="@+id/card_stack_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="4dp" />
+
+            <RelativeLayout
+                android:id="@+id/youHaveReachedThaMaxNumberOfCardsLayout"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+              >
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="60dp"
+                    android:fontFamily="@font/arb_1"
+                    android:gravity="center"
+                    android:text="@string/id_363" />
+
+                <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="@color/colorPrimary"
+                    fancy:fb_focusColor="@color/colorPrimaryDark"
+                    fancy:fb_radius="30dp"
+                    fancy:fb_text="@string/id_364"
+
+                    fancy:fb_textColor="#FFFFFF" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

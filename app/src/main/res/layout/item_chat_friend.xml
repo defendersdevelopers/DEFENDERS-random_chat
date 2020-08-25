@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/arb_1"
+            android:gravity="center"
+            android:text="11/02/2020"
+            android:textColor="#CC000000"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loading"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp" />
+
+
+                <ImageView
+                    android:id="@+id/VIPimageView"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="start"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/vip"
+                   />
+
+                <ImageView
+                    android:id="@+id/addWay"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start|bottom"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/match"
+                    />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arb_1"
+                    android:gravity="center"
+                    android:text="@string/id_612"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/countryFlag"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/flag"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/flag"
+                            android:id="@+id/flag"
+                            android:layout_width="18dp"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="18dp">
+                        </ImageView>
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/last_message_and_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/arb_1"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="last message"
+                        android:textColor="#CC000000"
+                        android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
