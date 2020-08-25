@@ -15,6 +15,7 @@ import android.text.InputFilter;
 import android.text.Spanned;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -65,7 +66,7 @@ public class create_account extends BaseActivity implements com.philliphsu.botto
         setContentView(R.layout.create_account);
         user = FirebaseAuth.getInstance().getCurrentUser();
         //birthDay listener
-        RadioRealButtonGroup group = findViewById(R.id.group);
+        RadioGroup group = findViewById(R.id.group);
         choseBirthdayTextView = findViewById(R.id.choseBirthday);
         edit_name = findViewById(R.id.edit_name);
         edit_name.setFilters(new InputFilter[] {
@@ -76,19 +77,22 @@ public class create_account extends BaseActivity implements com.philliphsu.botto
                     }
                 }
         });
-        group.setOnClickedButtonListener(new RadioRealButtonGroup.OnClickedButtonListener() {
+
+        group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClickedButton(RadioRealButton button, int position) {
-                switch (position) {
-                    case 0:
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (radioGroup.getCheckedRadioButtonId()){
+                    case R.id.male:
                         gender = "male";
                         break;
-                    case 1:
+                    case R.id.female:
                         gender = "female";
                         break;
                 }
             }
         });
+
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             login_method = extras.getString("login_method");
@@ -120,6 +124,8 @@ public class create_account extends BaseActivity implements com.philliphsu.botto
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
+
+
     }
 
 
@@ -222,5 +228,7 @@ public class create_account extends BaseActivity implements com.philliphsu.botto
             public void onCancelled(@NonNull DatabaseError databaseError) {
             }
         });
+
+
     }
 }

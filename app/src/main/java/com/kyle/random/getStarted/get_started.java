@@ -287,9 +287,11 @@ public class get_started extends BaseActivity {
                     SharedPreferences.Editor editor = getSharedPreferences("data", MODE_PRIVATE).edit();
                     editor.putString("Uid", uid);
                     editor.apply();
-                    startActivity(new Intent(get_started.this, fragmentViewer.class));
+                    Toast.makeText(get_started.this, "to home", Toast.LENGTH_SHORT).show();
+                    //startActivity(new Intent(get_started.this, fragmentViewer.class));
                 } else {
                     //create new account
+                    Toast.makeText(get_started.this, "to create acc", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(get_started.this, create_account.class).putExtra("login_method", login_method).putExtra("profileImageUrl", profileImageUrl));
                 }
             }

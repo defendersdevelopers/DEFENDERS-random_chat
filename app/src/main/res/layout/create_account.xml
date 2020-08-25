@@ -96,14 +96,14 @@
         android:layout_height="wrap_content" />
 
         <RadioGroup
-            android:visibility="gone"
+            android:id="@+id/group"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
             <RadioButton
           android:textColor="@color/white"
-                android:id="@+id/radioButton2"
+                android:id="@+id/male"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/id_251" />
@@ -111,67 +111,12 @@
             <RadioButton
                 android:textColor="@color/white"
                 android:layout_marginStart="20dp"
-                android:id="@+id/radioButton"
+                android:id="@+id/female"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/id_67" />
         </RadioGroup>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_gravity="start"
-        android:gravity="end"
-        android:layoutDirection="ltr"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-
-
-    <co.ceryle.radiorealbutton.RadioRealButtonGroup
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/group"
-        android:layoutDirection="ltr"
-        app:rrbg_animateDrawables_enter="overshoot"
-        app:rrbg_animateTexts_enter="overshoot"
-        app:rrbg_dividerColor="@color/colorPrimaryDark"
-        app:rrbg_dividerSize="1dp"
-        app:rrbg_selectorColor="@color/white"
-        app:rrbg_selectorSize="6dp">
-
-        <co.ceryle.radiorealbutton.RadioRealButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:rrb_drawable="@drawable/femme"
-            android:id="@+id/male"
-            app:rrb_drawableHeight="36dp"
-            app:rrb_drawablePadding="8dp"
-            app:rrb_drawableWidth="36dp"
-            app:rrb_ripple="true"
-            app:rrb_rippleColor="@color/colorPrimaryDark"
-            app:rrb_text="@string/id_68"
-
-            app:rrb_selectorColor="@color/colorPrimaryDark"
-
-            app:rrb_textColor="@color/black"/>
-
-        <co.ceryle.radiorealbutton.RadioRealButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:rrb_drawable="@drawable/gender_img_2"
-            app:rrb_drawableGravity="right"
-            app:rrb_drawableHeight="36dp"
-            android:id="@+id/female"
-            app:rrb_drawablePadding="8dp"
-            app:rrb_drawableWidth="36dp"
-            app:rrb_ripple="true"
-            app:rrb_rippleColor="@color/colorPrimaryDark"
-            app:rrb_text="@string/id_67"
-            app:rrb_selectorColor="@color/colorPrimaryDark"
-
-            app:rrb_textColor="@color/black"/>
-    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
-    </LinearLayout>
     </LinearLayout>
     <FrameLayout
         android:layout_alignParentBottom="true"
